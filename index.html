@@ -1,0 +1,264 @@
+<!-- Generated Using Claude -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Development Journey - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Development Journey</h1>
+      <p>
+        A comprehensive collection of web development projects showcasing skills
+        in HTML, CSS, JavaScript, and modern frameworks
+      </p>
+    </div>
+
+    <div class="projects">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>
+          Each project demonstrates different aspects of web development and
+          programming concepts
+        </p>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Projects will be dynamically generated here -->
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        &copy; 2025 My Development Journey. Built with dedication and continuous
+        learning.
+      </p>
+    </div>
+
+    <script>
+      const projects = [
+        {
+          icon: "DT",
+          title: "DentyTech - Dental Solution",
+          description:
+            "Modern dental practice management system with appointment scheduling and patient records management.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./00-dentytech/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "SS",
+          title: "StudySync - Learning Platform",
+          description:
+            "Interactive study platform with progress tracking and collaborative learning features for students.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./01-studysync/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "PF",
+          title: "Personal Portfolio",
+          description:
+            "Responsive portfolio website showcasing skills, projects, and professional experience with modern design.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./02-portfolio/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "PC",
+          title: "Pinterest Clone",
+          description:
+            "Visual discovery platform with masonry grid layout and infinite scroll functionality for image sharing.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./03-pinterest/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "TD",
+          title: "Todo List Manager",
+          description:
+            "Feature-rich task management application with categories, due dates, and local storage for persistent data.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./04-todo-list/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "SW",
+          title: "Stopwatch Timer",
+          description:
+            "Precision stopwatch application with lap timing, countdown timer, and sound notifications for accurate time tracking.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./05-stop-watch/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "KC",
+          title: "Key Capture Tool",
+          description:
+            "Interactive keyboard event detector for testing key combinations and shortcuts in web applications.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./06-key-capture/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "CP",
+          title: "Random Color Picker",
+          description:
+            "Dynamic color palette generator with hex codes, RGB values, and copy functionality for designers and developers.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./07-random-color-picker/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "CC",
+          title: "Color Changer",
+          description:
+            "Interactive background color changer with smooth transitions and predefined color palettes for UI design.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./08-color-changer/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "BM",
+          title: "Box Move Animation",
+          description:
+            "Smooth CSS animations and JavaScript interactions with draggable elements and motion effects.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./09-box-move/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "HM",
+          title: "Hover Manipulation",
+          description:
+            "Creative hover effects and mouse interaction experiments with advanced CSS and JavaScript techniques.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./10-hover-manipulation/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "HB",
+          title: "Hit Boxes Game",
+          description:
+            "Interactive clicking game with score tracking and dynamic difficulty levels for engaging gameplay.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./11-hit-boxes-game/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "RPS",
+          title: "Rock Paper Scissors",
+          description:
+            "Classic game implementation with computer AI, score tracking, and animated gameplay mechanics.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./12-rock-paper-scissors/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "TTT",
+          title: "Tic Tac Toe",
+          description:
+            "Interactive tic-tac-toe game with AI opponent and win detection algorithms for strategic gameplay.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./13-tic-tac-toe/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "AZ",
+          title: "AutoZenith Bot",
+          description:
+            "Automated bot system with intelligent responses and task management capabilities for enhanced productivity.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./autoZenith/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "FB",
+          title: "FB Login - Tailwind",
+          description:
+            "Facebook-inspired login interface built with Tailwind CSS demonstrating responsive design principles.",
+          techStack: ["HTML", "Tailwind CSS"],
+          projectLink: "./fb_login_tailwindcss/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "MS",
+          title: "Microsoft - Tailwind",
+          description:
+            "Microsoft homepage recreation using Tailwind CSS with responsive grid layout and modern design patterns.",
+          techStack: ["HTML", "Tailwind CSS"],
+          projectLink: "./microsoft_tailwindcss/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+        {
+          icon: "OP",
+          title: "OnePierce",
+          description:
+            "Anime-themed tribute page with character galleries and interactive elements showcasing creative web design.",
+          techStack: ["HTML", "CSS", "JavaScript"],
+          projectLink: "./onepiece/",
+          sourceLink:
+            "https://github.com/rajput-vishal01/demo-projects-hosting",
+        },
+      ];
+
+      // Function to create a project card
+      function createProjectCard(project) {
+        const techStackHTML = project.techStack
+          .map((tech) => `<span class="tech-tag">${tech}</span>`)
+          .join("");
+
+        return `
+          <div class="project-card">
+            <div class="project-icon">${project.icon}</div>
+            <h3 class="project-title">${project.title}</h3>
+            <p class="project-description">${project.description}</p>
+            <div class="tech-stack">${techStackHTML}</div>
+            <div class="project-links">
+              <a href="${project.projectLink}" class="btn btn-primary">View Project</a>
+              <a href="${project.sourceLink}" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        `;
+      }
+
+      function renderProjects() {
+        const projectsGrid = document.getElementById("projects-grid");
+        const projectsHTML = projects
+          .map((project) => createProjectCard(project))
+          .join("");
+        projectsGrid.innerHTML = projectsHTML;
+      }
+
+   
+      document.addEventListener("DOMContentLoaded", function () {
+        renderProjects();
+      });
+
+      if (typeof window !== "undefined") {
+        const script = document.createElement("script");
+        script.src = "script.js";
+        document.head.appendChild(script);
+      }
+    </script>
+  </body>
+</html>
